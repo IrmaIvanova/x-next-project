@@ -1,5 +1,7 @@
+import { PAGES } from "@/app/config/pages.config"
 import type { ITweet } from "@/shared/types/tweet.interface"
 import Image from "next/image"
+import Link from "next/link"
 
 interface Props {
     tweet: ITweet
@@ -13,7 +15,11 @@ export function Tweet({ tweet }: Props) {
                 alt='X logo'
                 width={24}
                 height={24} />
-            <span className="font-semibold">@{tweet.author}</span>
+            <Link 
+            href={PAGES.PROFILE(tweet.author.id)} 
+            className="font-semibold">
+                @{tweet.author.name}
+                </Link>
         </div>
         <p className="text-white/90">{tweet.text}</p>
     </div>

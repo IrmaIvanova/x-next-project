@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PAGES } from "../config/pages.config";
+import { Navbar } from "./Navbar";
+import { NAVBAR } from "@/shared/data/navbar.data";
 
 
 export function Header() {
@@ -14,11 +17,7 @@ export function Header() {
                     height={28}
                     priority />
             </Link>
-            <nav className="flex items-center gap-3">
-                <Link href='/'>Home</Link>
-                <Link href='/'>Explore</Link>
-                <Link href='/'>Profile</Link>
-            </nav>
+            <Navbar links={NAVBAR.links} />
         </header>
     )
 }
