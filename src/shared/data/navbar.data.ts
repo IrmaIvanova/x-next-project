@@ -5,15 +5,15 @@ export const NAVBAR: INavbar = {
     links: [
         {
             name: "Home",
-           route: `${PAGES.HOME()}`
+           route: `${PAGES.HOME}`
         },
         {
             name: "Profile",
-            route: `${PAGES.PROFILE(123)}`
+            route: `${PAGES.PROFILE_MY}`
         },
         {
             name: "Explore",
-            route: `${PAGES.EXPLORE()}`
+            route: `${PAGES.EXPLORE}`
         }
     ]
 }

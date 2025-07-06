@@ -1,15 +1,23 @@
+'use client'
+
 import Link from "next/link";
-import { PAGES } from "../config/pages.config";
 import type { INavbar } from "@/shared/types/navbar.interface";
+import { usePathname } from "next/navigation";
+import { match } from "path-to-regexp";
+import { NavbarItem } from "./NavbarItem";
 
 
 
 
 export function Navbar({ links }: INavbar) {
+    const pathname = usePathname()
     return (
         <nav className="flex gap-6 text-white/80">
 
-            {links.map(link => <Link key={"key" + link.name} href={link.route}>{link.name}</Link>)}
+            {links.map(link => <NavbarItem
+                navbarItem={link}
+                isActive={!!match(link.route)(pathname)}
+                href={link.route} />)}
 
         </nav>
     )

@@ -9,7 +9,7 @@ export default function NotFound() {
                 This page doesn't exist. Or maybe it moved
             </p>
             <Link
-                href={PAGES.HOME()}
+                href={PAGES.HOME}
                 className="text-sm text-blue-500 hover:underline">
                 ← Back to home
             </Link>
