@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PAGES } from "../config/pages.config";
+
 import { Navbar } from "./Navbar";
 import { NAVBAR } from "@/shared/data/navbar.data";
 

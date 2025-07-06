@@ -1,5 +1,6 @@
 export const PAGES = {
-    HOME:()=>`/`,
+    HOME: () => `/`,
+    EXPLORE: () => `/explore`,
     PROFILE: (userid: number) => `/user/${userid}`
 }
 
