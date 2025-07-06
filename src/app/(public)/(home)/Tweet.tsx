@@ -1,4 +1,4 @@
-import { PAGES } from "@/app/config/pages.config"
+import { PAGES } from "@/config/pages.config"
 import type { ITweet } from "@/shared/types/tweet.interface"
 import Image from "next/image"
 import Link from "next/link"
