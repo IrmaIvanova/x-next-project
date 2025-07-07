@@ -9,7 +9,7 @@ export const NAVBAR: INavbar = {
         },
         {
             name: "Profile",
-            route: `${PAGES.PROFILE_MY}`
+            route: `${PAGES.PROFILE(123)}`
         },
         {
             name: "Explore",

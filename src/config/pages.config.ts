@@ -2,7 +2,7 @@ export const PAGES = {
     HOME: `/`,
     EXPLORE: `/explore`,
     PROFILE: (userid: number) => `/user/${userid}`,
-    PROFILE_MY: `/user/123`
+    
 }
 
 
