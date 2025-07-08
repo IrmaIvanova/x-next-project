@@ -1,3 +1,5 @@
+import { ContentBox } from "@/components/ContentBox"
+
 type Params = { userid: string }
 
 export default async function TestProfilePage({
@@ -8,10 +10,7 @@ export default async function TestProfilePage({
 
     const { userid } = await params
 
-    return <div className="min-h-screen flex justify-center px-4 py-8">
-        <div className="w-full max-w-xl">
-            <h1 className="text-3xl font-bold mb-6">User Profile {`${userid}`}</h1>
-
-        </div>
-    </div>
+    return <ContentBox
+        title={`User Profile ${userid}`}
+    />
 }
