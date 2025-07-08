@@ -1,14 +1,14 @@
 
 
 import type { Metadata } from "next";
-import UserProfile from "./UserProfile";
+import ClientProfile from "./UserProfile";
 
 
 export const metadata: Metadata = {
   title: "profileFake"
 }
 
-export default function Profile_fake() {
+export default function ProfilePage() {
 
-  return <UserProfile />;
+  return <ClientProfile />;
 }

@@ -1,10 +1,17 @@
-export default function Explore() {
-    return (
-        <div className="min-h-screen flex justify-center px-4 py-8">
-            <div className="w-full max-w-xl">
-                <h1 className="text-3xl font-bold mb-6">Explore</h1>
 
-            </div>
-        </div>
-    );
+
+import type { Metadata } from "next";
+import ExploreClient from "./Explore";
+import { Suspense } from "react";
+
+
+export const metadata: Metadata = {
+    title: "explore client"
+}
+
+export default function ExplorePage() {
+
+    return <Suspense>
+        <ExploreClient />
+    </Suspense>;
 }

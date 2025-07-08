@@ -1,5 +1,6 @@
+import { Tweet } from "@/components/Tweet";
 import { TWEETS } from "@/shared/data/tweets.data";
-import { Tweet } from "./Tweet";
+
 
 const tweetFirst = {
   "id": 1,
@@ -15,8 +16,8 @@ export default function Home() {
     <div className="min-h-screen flex justify-center px-4 py-8">
       <div className="w-full max-w-xl">
         <h1 className="text-3xl font-bold mb-6">Home</h1>
-        {TWEETS.map(tweet => <Tweet  key={`key_id-${tweet.id}`} tweet={tweet} />)}
-        
+        {TWEETS.map(tweet => <Tweet key={`key_id-${tweet.id}`} tweet={tweet} />)}
+
 
       </div>
     </div>

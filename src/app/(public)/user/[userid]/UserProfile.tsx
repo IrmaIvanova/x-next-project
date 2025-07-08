@@ -4,8 +4,8 @@ import { PAGES } from "@/config/pages.config";
 import { useParams, usePathname, useRouter } from "next/navigation";
 
 
-export default function UserProfile() {
-    const params = useParams()
+export default function ProfileClient() {
+    const params = useParams<{ userid: string }>()
 
     const router = useRouter()
 
