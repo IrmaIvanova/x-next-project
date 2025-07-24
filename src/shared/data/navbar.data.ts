@@ -5,7 +5,7 @@ export const NAVBAR: INavbar = {
     links: [
         {
             name: "Home",
-           route: `${PAGES.HOME}`
+            route: `${PAGES.HOME}`
         },
         {
             name: "Profile",
@@ -14,6 +14,28 @@ export const NAVBAR: INavbar = {
         {
             name: "Explore",
             route: `${PAGES.EXPLORE}`
+        },
+        {
+            name: "Shop",
+            route: `${PAGES.SSR}`
         }
+    ]
+}
+
+export const SHOP_NAVBAR: INavbar = {
+    links: [
+        {
+            name: "SSR",
+            route: `${PAGES.SSR}`
+        },
+        {
+            name: "SSG",
+            route: `${PAGES.SSG}`
+        },
+        {
+            name: "ISR",
+            route: `${PAGES.ISR}`
+        },
+      
     ]
 }

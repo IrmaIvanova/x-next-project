@@ -2,8 +2,12 @@ export const PAGES = {
     HOME: `/`,
     EXPLORE: `/explore`,
     PROFILE: (userid: number) => `/user/${userid}`,
-    
+    SSR: `/shop/ssr`,
+    SSG: `/shop/ssg`,
+    ISR: `/shop/isr`,
+
 }
+
 
 
 // Плюсы:

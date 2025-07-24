@@ -11,7 +11,7 @@ import { NavbarItem } from "./NavbarItem";
 
 export function Navbar({ links }: INavbar) {
     const pathname = usePathname()
-    
+    console.log("pathname", pathname)
     return (
         <nav className="flex gap-6 text-white/80">
 
