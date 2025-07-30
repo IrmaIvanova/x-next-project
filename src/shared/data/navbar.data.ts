@@ -1,5 +1,5 @@
 import { PAGES } from "@/config/pages.config";
-import type { ILink, INavbar } from "../types/navbar.interface";
+import type {  INavbar } from "../types/navbar.interface";
 
 export const NAVBAR: INavbar = {
     links: [

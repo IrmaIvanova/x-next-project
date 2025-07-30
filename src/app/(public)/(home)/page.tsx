@@ -7,12 +7,14 @@ export default function Home() {
   return (
     <ContentBox
       title={`Home`}
-      children={<>
+
+    >
+      <div>
         <TweetForm />
         {
           TWEETS.map(tweet => <Tweet key={`key_id-${tweet.id}`} tweet={tweet} />)
         }
-      </>}
-    />
+      </div>
+    </ContentBox>
   );
 }

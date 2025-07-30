@@ -6,7 +6,8 @@ export default async function shopISRPage() {
         next: { revalidate: 300 }
     }
     )
-    const products = (await respons.json()).products.map((product: any) => ({
+    
+    const products = (await respons.json()).products.map((product: {id:string, price:string, thumbnail:string, title:string }) => ({
         id: product.id,
         price: product.price,
         image: product.thumbnail,

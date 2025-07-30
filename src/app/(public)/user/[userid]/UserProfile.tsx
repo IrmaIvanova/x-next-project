@@ -2,7 +2,7 @@
 
 import { ContentBox } from "@/components/ContentBox";
 import { PAGES } from "@/config/pages.config";
-import { useParams, usePathname, useRouter } from "next/navigation";
+import { useParams,  useRouter } from "next/navigation";
 
 
 export default function ProfileClient() {
@@ -13,10 +13,11 @@ export default function ProfileClient() {
     return (
         <ContentBox
             title={`User Profile ${params.userid}`}
-            children={
-                <button onClick={() => router.push(PAGES.HOME)}>
-                    ← Go to home
-                </button>} />
-       
+        >
+            <button onClick={() => router.push(PAGES.HOME)}>
+                ← Go to home
+            </button>
+        </ContentBox>
+
     );
 }

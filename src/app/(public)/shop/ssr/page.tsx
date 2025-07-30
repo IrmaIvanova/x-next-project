@@ -3,7 +3,7 @@ import { API_URL } from "@/constant"
 
 export default async function shopSSRPage() {
     const respons = await fetch(API_URL, {cache:"no-store"})
-    const products = (await respons.json()).products.map((product: any) => ({
+    const products = (await respons.json()).products.map((product: {id:string, price:string, thumbnail:string, title:string }) => ({
         id: product.id,
         price: product.price,
         image: product.thumbnail,
