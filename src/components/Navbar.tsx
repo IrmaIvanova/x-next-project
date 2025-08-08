@@ -11,7 +11,7 @@ import { NavbarItem } from "./NavbarItem";
 export function Navbar({ links }: INavbar) {
     const pathname = usePathname()
     return (
-        <nav className="flex gap-6 text-white/80">
+        <nav className="flex  text-white/80 ">
 
             {links.map(link => <NavbarItem
                 key={"key" + link.name}

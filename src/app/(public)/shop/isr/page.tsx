@@ -14,7 +14,7 @@ export default async function shopISRPage() {
         title: product.title
     })) as Product[]
 
-    return <div className="grid grid-cols-3 gap-4">
+    return <div className="grid max-sm:grid-cols-1 max-lg:grid-cols-2 grid-cols-4 gap-4">
         {products.map(product => (
             <ProductCard
                 key={product.id}

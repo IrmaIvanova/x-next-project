@@ -1,4 +1,5 @@
 import { ContentBox } from "@/components/ContentBox"
+import type { Metadata } from "next"
 
 type Params = { userid: string }
 

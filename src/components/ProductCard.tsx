@@ -9,7 +9,7 @@ export interface Product {
 
 export function ProductCard({ title, image, price }: Product) {
     return (
-        <div className="w-64 border border-white/10 rounded-xl p-4 hover:shadow transition">
+        <div className="w-64  max-sm:w-full flex flex-col items-center border border-white/10 rounded-xl p-4 hover:shadow transition">
             
             <Image
                 width={100}
