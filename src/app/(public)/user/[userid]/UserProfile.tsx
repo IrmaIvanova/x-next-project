@@ -1,22 +1,20 @@
+
 'use client'
-
 import { ContentBox } from "@/components/ContentBox";
-import { PAGES } from "@/config/pages.config";
-import { useParams,  useRouter } from "next/navigation";
+import dynamic from "next/dynamic";
+import { useParams } from "next/navigation";
 
+const DynamicButtonToHome = dynamic(() => import('@/components/Button')
+    .then((mod) => mod.ButtonToHome))
 
 export default function ProfileClient() {
     const params = useParams<{ userid: string }>()
-
-    const router = useRouter()
 
     return (
         <ContentBox
             title={`User Profile ${params.userid}`}
         >
-            <button onClick={() => router.push(PAGES.HOME)}>
-                ← Go to home
-            </button>
+            <DynamicButtonToHome />
         </ContentBox>
 
     );

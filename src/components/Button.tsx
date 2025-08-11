@@ -1,0 +1,13 @@
+'use client'
+
+import { PAGES } from "@/config/pages.config";
+import { useRouter } from "next/navigation";
+
+export function ButtonToHome(){
+     const router = useRouter()
+
+    return <button onClick={() => router.push(PAGES.HOME)}>
+                ← Go to home
+            </button>
+
+}
