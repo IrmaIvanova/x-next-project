@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import Home from "./(home)/page";
 
 
 export default function Layout({
@@ -9,6 +10,7 @@ export default function Layout({
     return (
 
         <div>
+            <Header />
             {children}
         </div>
     );

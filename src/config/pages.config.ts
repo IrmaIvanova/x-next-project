@@ -1,10 +1,18 @@
 export const PAGES = {
-    HOME: `/`,
-    EXPLORE: `/explore`,
-    PROFILE: (userid: number) => `/user/${userid}`,
-    SSR: `/shop/ssr`,
-    SSG: `/shop/ssg`,
-    ISR: `/shop/isr`,
+    HOME: `/x-project/`,
+    EXPLORE: `/x-project/explore`,
+    PROFILE: (userid: number) => `/x-project/user/${userid}`,
+    SSR: `/x-project/shop/ssr`,
+    SSG: `/x-project/shop/ssg`,
+    ISR: `/x-project/shop/isr`,
+
+    
+
+}
+export const REPAIRSHOP = {
+    HOME:`/repair-shop/`
+
+    
 
 }
 

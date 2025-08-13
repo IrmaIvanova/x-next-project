@@ -1,5 +1,5 @@
-import { PAGES } from "@/config/pages.config";
-import type {  INavbar } from "../types/navbar.interface";
+import { PAGES, REPAIRSHOP } from "@/config/pages.config";
+import type { INavbar } from "../types/navbar.interface";
 
 export const NAVBAR: INavbar = {
     links: [
@@ -37,5 +37,20 @@ export const SHOP_NAVBAR: INavbar = {
             route: `${PAGES.ISR}`
         },
       
+    ]
+}
+
+export const MAIN_PAGE_NAVBAR: INavbar = {
+    links: [
+        {
+            name: "X Nextp Project",
+            route: `${PAGES.HOME}`
+        },
+        {
+            name: "Repair Shop",
+            route: `${REPAIRSHOP.HOME}`
+        },
+
+
     ]
 }

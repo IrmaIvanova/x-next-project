@@ -10,7 +10,7 @@ jest.mock('@/server-actions/post-tweet', () => ({
     })
 }));
 
-import Home from '@/app/(public)/(home)/Home'
+import Home from '@/app/(public)/x-project/(home)/Home'
 import { TWEETS } from '@/shared/data/tweets.data';
 
 

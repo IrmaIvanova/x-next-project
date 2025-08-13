@@ -1,10 +1,13 @@
-import Home from "./Home";
-import { TWEETS } from "@/shared/data/tweets.data";
+import { ContentBox } from "@/components/ContentBox";
+import { Navbar } from "@/components/Navbar";
+import { MAIN_PAGE_NAVBAR } from "@/shared/data/navbar.data";
 
 
 
 export default function HomePage() {
-  return (
-    <Home tweets={TWEETS}/>
-  );
+    return (
+        <ContentBox title={"My Next.js learning projects"}>
+            <Navbar links={MAIN_PAGE_NAVBAR.links} />
+        </ContentBox>
+    );
 }
