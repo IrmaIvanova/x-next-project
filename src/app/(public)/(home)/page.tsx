@@ -1,5 +1,5 @@
-import { ContentBox } from "@/components/ContentBox";
-import { Navbar } from "@/components/Navbar";
+import { ContentBox } from "@/myComponents/ContentBox";
+import { Navbar } from "@/myComponents/Navbar";
 import { MAIN_PAGE_NAVBAR } from "@/shared/data/navbar.data";
 
 

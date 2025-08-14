@@ -1,6 +1,6 @@
 'use client'
 
-import { ContentBox } from "@/components/ContentBox";
+import { ContentBox } from "@/myComponents/ContentBox";
 import { useSearchParams } from "next/navigation";
 
 

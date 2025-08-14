@@ -7,7 +7,7 @@ import { NAVBAR } from "@/shared/data/navbar.data";
 
 export function Header() {
     return (
-        <header className="border-b bprder-white/10 px-6 py-4 flex items=center justify-between bg-black">
+        <header className="border-b dark:bprder-white/10 px-6 py-4 flex items=center justify-between dark:bg-black">
             <Link href='/'
                 className="flex items-center gap-3">
                 <Image

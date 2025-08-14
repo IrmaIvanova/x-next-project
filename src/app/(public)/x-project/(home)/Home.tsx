@@ -1,6 +1,6 @@
-import { ContentBox } from "@/components/ContentBox";
-import { Tweet } from "@/components/Tweet";
-import { TweetForm } from "@/components/TweetForm";
+import { ContentBox } from "@/myComponents/ContentBox";
+import { Tweet } from "@/myComponents/Tweet";
+import { TweetForm } from "@/myComponents/TweetForm";
 import type { ITweet } from "@/shared/types/tweet.interface";
 
 interface HomeProps {

@@ -1,12 +1,12 @@
 'use client'
 
-import { PageTitle } from "@/components/PageTitle";
+import { PageTitle } from "@/myComponents/PageTitle";
 import { SHOP_NAVBAR } from "@/shared/data/navbar.data";
 import dynamic from "next/dynamic";
 import type { PropsWithChildren } from "react";
 
 const DynamicShopMenu = dynamic(
-    () => import("@/components/Navbar").then(mod => mod.Navbar),
+    () => import("@/myComponents/Navbar").then(mod => mod.Navbar),
     { ssr: false, loading: ()=><div>Loading...</div> }
 )
 

@@ -1,4 +1,4 @@
-import { Header } from "@/components/Header";
+import { Header } from "@/myComponents/Header";
 import Home from "./(home)/page";
 
 

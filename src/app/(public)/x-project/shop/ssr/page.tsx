@@ -1,4 +1,4 @@
-import { ProductCard, type Product } from "@/components/ProductCard"
+import { ProductCard, type Product } from "@/myComponents/ProductCard"
 import { API_URL } from "@/constant"
 
 export default async function shopSSRPage() {

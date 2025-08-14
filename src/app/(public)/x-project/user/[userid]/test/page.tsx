@@ -1,4 +1,4 @@
-import { ContentBox } from "@/components/ContentBox"
+import { ContentBox } from "@/myComponents/ContentBox"
 
 type Params = { userid: string }
 

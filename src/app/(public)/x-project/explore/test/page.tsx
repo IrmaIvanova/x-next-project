@@ -1,4 +1,4 @@
-import { ContentBox } from "@/components/ContentBox"
+import { ContentBox } from "@/myComponents/ContentBox"
 import type { Metadata } from "next"
 
 type Params = { tag?: string }
