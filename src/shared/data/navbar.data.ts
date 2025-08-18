@@ -43,7 +43,7 @@ export const SHOP_NAVBAR: INavbar = {
 export const MAIN_PAGE_NAVBAR: INavbar = {
     links: [
         {
-            name: "X Nextp Project",
+            name: "X Next Project",
             route: `${PAGES.HOME}`
         },
         {

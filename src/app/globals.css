@@ -1,14 +1,26 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
+
 @custom-variant dark (&:is(.dark *));
+
+
+@layer components {
+  .bg-image {
+    background-image: url('/home-bg-image.png');
+  }
+
+  .dark-bg-image {
+    background-image: url('/home-bg-image-dark.png');
+  }
+}
 
 :root {
   /* --background: #ffffff;
   --foreground: #0f0f0f; */
   --font-sana: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono)
-;
+  --font-mono: var(--font-geist-mono);
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.13 0.028 261.692);
@@ -40,7 +52,8 @@
   --sidebar-accent: oklch(0.967 0.003 264.542);
   --sidebar-accent-foreground: oklch(0.21 0.034 264.665);
   --sidebar-border: oklch(0.928 0.006 264.531);
-  --sidebar-ring: oklch(0.707 0.022 261.325)}
+  --sidebar-ring: oklch(0.707 0.022 261.325)
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -83,6 +96,7 @@
 }
 
 body {
+
   font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 18px;
   line-height: 1.6;
@@ -123,11 +137,52 @@ html {
   --sidebar-accent: oklch(0.278 0.033 256.848);
   --sidebar-accent-foreground: oklch(0.985 0.002 247.839);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);}
+  --sidebar-ring: oklch(0.551 0.027 264.364);
+}
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;}
-  body {
-    @apply bg-background text-foreground;}}
+    @apply border-border outline-ring/50;
+  }
 
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Анимация слайд */
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Анимация появление */
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Классы под Tailwind */
+@layer utilities {
+  .animate-slide {
+    animation: slide 750ms ease-in-out forwards;
+  }
+
+  .animate-appear {
+    animation: appear 1s ease-in-out forwards;
+  }
+}
