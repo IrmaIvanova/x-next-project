@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 import { PAGES } from "@/config/pages.config"
 interface IButtonToHomeProps {
   link?: string;
-  buttonText?: string| React.ReactNode;
+  buttonText?: string | React.ReactNode;
   asChild?: boolean;
 }
 
@@ -49,6 +49,7 @@ function Button({
   asChild = false,
   link,
   buttonText,
+  children,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> &
@@ -60,8 +61,8 @@ function Button({
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}>
-      <Link href={link ? link : PAGES.HOME}> 
-      {buttonText ? buttonText : "← Go to home"}
+      <Link href={link ? link : PAGES.HOME}>
+        {buttonText ? buttonText : children ? children : "← Go to home"}
       </Link>
     </Comp>
 

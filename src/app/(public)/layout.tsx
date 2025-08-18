@@ -1,5 +1,4 @@
-import { Header } from "@/myComponents/Header";
-
+import { ModeToggle } from "@/components/ModeToggle";
 
 export default function Layout({
     children,
@@ -9,6 +8,7 @@ export default function Layout({
     return (
 
         <div>
+              <ModeToggle />
             {children}
         </div>
     );
