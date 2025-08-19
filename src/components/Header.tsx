@@ -1,6 +1,7 @@
 import { Home, File, Users } from "lucide-react"
 import { NavButton } from "@/components/NavButton"
 import Link from "next/link"
+import { ModeToggle } from "./ModeToggle"
 
 export function HeaderRS() {
     return (
@@ -11,7 +12,7 @@ export function HeaderRS() {
                         href="/repair-shop/home"
                         label="Home"
                         icon={Home} />
-                        
+
                     <Link
                         href="/repair-shop/home"
                         className="flex justify-center items-center gap-2 ml-0"
@@ -32,6 +33,8 @@ export function HeaderRS() {
                         href="/repair-shop/customers"
                         label="customers"
                         icon={Users} />
+                    <ModeToggle />
+
 
                 </div>
             </div>

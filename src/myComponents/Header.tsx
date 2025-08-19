@@ -3,21 +3,22 @@ import Link from "next/link";
 
 import { Navbar } from "./Navbar";
 import { NAVBAR } from "@/shared/data/navbar.data";
+import { ModeToggle } from "@/components/ModeToggle";
+import { XLogo } from "./XLogo";
 
 
 export function Header() {
     return (
-        <header className="border-b dark:bprder-white/10 px-6 py-4 flex items=center justify-between dark:bg-black">
+        <header className="border-b dark:border-white/10 px-6 py-4 flex items-center justify-between dark:bg-black">
             <Link href='/'
                 className="flex items-center gap-3">
-                <Image
-                    src='/x-logo.svg'
-                    alt='X logo'
-                    width={28}
-                    height={28}
-                    priority />
+                <XLogo />
             </Link>
-            <Navbar links={NAVBAR.links} />
+            <div className="flex">
+                <Navbar links={NAVBAR.links} />
+                <ModeToggle />
+            </div>
+
         </header>
     )
 }

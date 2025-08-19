@@ -1,5 +1,3 @@
-import { ModeToggle } from "@/components/ModeToggle";
-
 export default function Layout({
     children,
 }: Readonly<{
@@ -8,7 +6,6 @@ export default function Layout({
     return (
 
         <div>
-              <ModeToggle />
             {children}
         </div>
     );

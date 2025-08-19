@@ -1,9 +1,13 @@
+import { ModeToggle } from "@/components/ModeToggle";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function HomePage() {
     return (
         <div className="bg-indigo-200 bg-image dark:bg-black  dark:bg-[url('/home-bg-image-dark.png')] bg-cover bg-center ">
+            <div className="absolute right-0">
+                <ModeToggle />
+            </div>
             <Button className="fixed m-2"
                 buttonText={"← Go to main project page"} link={"/"} />
             <main className="flex flex-col justify-center text-center max-w-5xl mx-auto h-dvh">

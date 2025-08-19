@@ -41,9 +41,12 @@ export function ModeToggle() {
     }
 
     return (
-        <DropdownMenu>
+        <DropdownMenu >
             <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="icon">
+                <Button
+                    variant="ghost"
+                    size="icon"
+                    className="rounded-full" >
 
                     {currentTheme === "dark" ? <Moon className="h-[1.2rem] w-[1.2rem] rotate-0 transition-all" />
                         : <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 transition-all" />}
@@ -51,7 +54,7 @@ export function ModeToggle() {
                     <span className="sr-only">Toggle theme</span>
                 </Button>
             </DropdownMenuTrigger>
-            
+
             <DropdownMenuContent align="end">
                 <DropdownMenuCheckboxItem
                     checked={theme === "light"}

@@ -9,7 +9,7 @@ export default function Layout({
 }>) {
     return (
 
-        <div>
+        <div className="dark:bg-black">
             <Header />
             {children}
         </div>
