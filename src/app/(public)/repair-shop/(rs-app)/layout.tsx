@@ -1,5 +1,16 @@
 import { HeaderRS } from "@/components/Header";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Irma Next project',
+    default: 'Irma Next project'
+  },
+  description: "Studing Next JS",
+  applicationName: "Irma Next project"
+};
+
 export default function Layout({
     children,
 }: Readonly<{

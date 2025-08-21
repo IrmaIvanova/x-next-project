@@ -56,14 +56,17 @@ function Button({
   IButtonToHomeProps) {
   const Comp = asChild ? Slot : "button"
 
+  const withLink = link ? <Link href={link ? link : PAGES.HOME}>
+    {buttonText ? buttonText : children ? children : "← Go to home"}
+  </Link> : (buttonText ? buttonText : children ? children : "← Go to home")
+
   return (
     <Comp
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}>
-      <Link href={link ? link : PAGES.HOME}>
-        {buttonText ? buttonText : children ? children : "← Go to home"}
-      </Link>
+
+      {withLink}
     </Comp>
 
   )

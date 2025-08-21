@@ -18,8 +18,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "X project",
+  title: {
+    template: '%s | Irma Next project',
+    default: 'Irma Next project'
+  },
   description: "Studing Next JS",
+  applicationName: "Irma Next project"
 };
 
 export default function RootLayout({
@@ -29,13 +33,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-  <body
-    className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-  >
-    <ThemeProvider disableTransitionOnChange>
-      {children}
-    </ThemeProvider>
-  </body>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ThemeProvider disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
+      </body>
     </html >
   );
 }
